@@ -1168,7 +1168,6 @@ footer {
 .footer-brand .logo:hover {
     color: #93c5fd;
 }
-/* Mobile Navigation Menu */
 
 .menu-toggle {
     display: block;
@@ -1222,7 +1221,6 @@ footer {
         padding: 0;
     }
 }
-/* Professional Mobile Navigation */
 
 .brand {
     display: flex;
@@ -1311,8 +1309,6 @@ footer {
     background-color: #eff6ff;
 }
 
-/* Hamburger Animation */
-
 .menu-toggle.active span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
@@ -1325,7 +1321,6 @@ footer {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Desktop */
 
 @media (min-width: 768px) {
     nav {
@@ -1358,10 +1353,6 @@ footer {
         background-color: transparent;
     }
 }
-
-/* Hero Card Logo */
-
-/* Hero Card Logo - Final Position */
 
 .hero-card-logo {
     position: absolute;
@@ -1401,4 +1392,161 @@ footer {
 
 .project-card:hover .project-image img {
     transform: scale(1.04);
+}
+
+/* Footer call-to-action */
+.footer-cta {
+    padding: 70px 20px;
+    text-align: center;
+    background: #0c1a2e;
+    color: #ffffff;
+}
+
+.footer-label {
+    color: #69a5ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.footer-cta h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.footer-cta > p:not(.footer-label) {
+    color: #b8c7da;
+    max-width: 540px;
+    margin: 0 auto 28px;
+    line-height: 1.7;
+}
+
+.footer-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 22px;
+    background: #2679f3;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.3s ease,
+                transform 0.3s ease;
+}
+
+.footer-cta-button:hover {
+    background: #1265dc;
+    transform: translateY(-2px);
+}
+
+/* Main footer */
+footer {
+    background: #07111f;
+    color: #ffffff;
+}
+
+.footer-content {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 55px 24px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+.footer-brand .logo {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.footer-brand p {
+    max-width: 330px;
+    color: #aab9cc;
+    line-height: 1.8;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.footer-links h3 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.footer-links a {
+    color: #aab9cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #69a5ff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #26354a;
+    padding: 22px 24px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #91a2b8;
+    font-size: 13px;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .footer-cta {
+        padding: 55px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 24px;
+        padding: 40px 22px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+}
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.footer-logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 50%;
 }
