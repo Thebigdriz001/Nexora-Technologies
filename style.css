@@ -762,12 +762,7 @@ footer {
 .hero-card::before {
     content: "";
     position: absolute;
-    width: 120px;
-    height: 120px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 50%;
-    top: 30px;
-    right: 30px;
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -1362,4 +1357,48 @@ footer {
     .nav-menu a:hover {
         background-color: transparent;
     }
+}
+
+/* Hero Card Logo */
+
+/* Hero Card Logo - Final Position */
+
+.hero-card-logo {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    z-index: 3;
+}
+
+.hero-card-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.project-image {
+    height: 230px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.04);
 }
